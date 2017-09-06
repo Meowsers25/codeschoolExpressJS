@@ -1,0 +1,6 @@
+What is the only middleware that's shipped with Express 4?
+
+validations
+express-static x
+body-parser
+

@@ -1,0 +1,23 @@
+var express = require('express');
+var app = express();
+
+app.use(function(request, response, next){
+  if (request.path === "/cities"){
+    next();
+  } else {
+    response.status(404).json("Path requested does not exist");
+  }
+});
+
+app.get('/cities', function(request, response){
+  var cities = ['Caspiana', 'Indigo', 'Paradise'];
+  response.json(cities);
+});
+
+app.listen(3000);
+
+When we run our previous code and issue a GET request to the /buildings endpoint, what will the response be?
+
+A successful response with ['Caspiana', 'Indigo', 'Paradise']
+An error
+A 404 response with 'Path requested does not exist' X

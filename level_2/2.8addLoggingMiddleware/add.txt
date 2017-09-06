@@ -1,0 +1,16 @@
+In the following code in app.js, we require our new middleware and assign it to a variable called logger.
+
+var express = require('express');
+var app = express();
+
+var logger = require('./logger');
+
+//TODO: mount middleware
+
+app.listen(3000);
+
+What function should we call in order to mount the middleware and add it to the stack?
+
+app.route(logger)
+app.use(logger) x
+app.mount(logger)

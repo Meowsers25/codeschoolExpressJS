@@ -8,21 +8,11 @@
   <h1>Cities</h1>
 
   <ul class='city-list'></ul>
+  <!--Now we can add some client-side JavaScript by
+including the jquery.js and client.js files.-->
+  <!--Within index.html, include jquery.js using a <script> tag.-->
   <script src="jquery.js"></script>
+  <!--Within index.html, include client.js using a <script> tag.-->
   <script src="client.js"></script> 
 </body>
 </html>
-
-
-$(function(){
-
-  $.get('/cities', appendToList ); 
-
-  function appendToList(cities) {
-    var list = [];
-    for(var i in cities){
-      list.push($('<li>', { text: cities[i] }));
-    }
-    $('.city-list').append(list);
-  }
-});

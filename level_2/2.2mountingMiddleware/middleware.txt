@@ -1,0 +1,6 @@
+Given an application instance is set to the app variable, which of the
+following function calls would you use to mount a middleware called logger ?
+
+app.run(logger)
+app.use(logger) x
+app.route(logger)

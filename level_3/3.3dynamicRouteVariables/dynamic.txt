@@ -1,0 +1,11 @@
+Consider the following Dynamic Route:
+
+app.get('/cities/:name', function (request, response) {
+  // ...
+})
+
+When requests come in for this route, how can we access the city name submitted by the user?
+
+request.query.name
+request.name
+request.params.name X

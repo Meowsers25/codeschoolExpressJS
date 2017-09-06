@@ -1,0 +1,6 @@
+Let's start building our new Express application by installing Express. Type the command that installs the latest version for the 4.9 branch.
+
+Type help to see the help menu
+
+​
+$ npm install express --save

@@ -1,0 +1,5 @@
+What would the response body be set to on a DELETE request to /cities/DoesNotExist ? 
+Here's the link to the sendStatus function source code if you need to take a look.
+
+200
+404 X
